@@ -1,0 +1,17 @@
+.pg-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.pg-title {
+    text-align: center;
+}
+
+.pg-button {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+}

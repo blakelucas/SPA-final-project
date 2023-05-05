@@ -1,0 +1,63 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #b8b8b8;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+a:hover {
+    background-color: rgb(131, 131, 131);
+}
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    text-align: center;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    /* justify-content: center;
+    align-items: center;
+    margin: 0 auto; */
+}
+
+/* ::ng-deep .menu-drop {
+    background: rgb(42, 157, 143);
+}
+
+.menu-button {
+    background: rgb(42, 157, 143);
+} */
+
+span {
+    /* display: flex; */
+    flex-direction: column;
+    /* margin: 150px; */
+}
+
+mat-toolbar {
+    background-color: rgb(244, 162, 97);
+}
+
+.components {
+    /* justify-content: center;
+    align-items: center;
+    justify-items: center; */
+    display: flex;
+}
+
+/* 
+router-outlet.components {
+    width: 100%;
+} */

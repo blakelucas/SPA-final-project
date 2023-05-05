@@ -1,0 +1,25 @@
+<form class="object-form" (ngSubmit)="onSubmit()" #playgroundForm="ngForm">
+    <h4 class="spawn">Spawn a new object: </h4>
+    <label for="type">Object Type: </label>
+    <select [(ngModel)]="type" name="type" required>
+        <option value="circle">Circle</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="polygon">Polygon</option>
+    </select>
+    <br>
+    <label for="size">Size: </label>
+    <input type="number" [(ngModel)]="size" name="size" placeholder="Circle & Polygon Size" [disabled]="isSizeDisabled()">
+    <br>
+    <label for="width">Width: </label>
+    <input type="number" [(ngModel)]="width" name="width" placeholder="Rectangle Width" [disabled]="isWidthDisabled()">
+    <br>
+    <label for="height">Height: </label>
+    <input type="number" [(ngModel)]="height" name="height" placeholder="Rectangle Height" [disabled]="isHeightDisabled()">
+    <br>
+    <label for="vertices">Vertices: </label>
+    <input type="number" [(ngModel)]="vertices" name="vertices" placeholder="Polygon Vertices" [disabled]="isVerticesDisabled()">
+    <br>
+    <div class="spawn">
+        <button type="submit" [disabled]="playgroundForm.invalid">Create Object</button>
+    </div>
+</form>

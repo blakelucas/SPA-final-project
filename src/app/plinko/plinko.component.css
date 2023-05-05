@@ -1,0 +1,10 @@
+.pl-title {
+    text-align: center;
+}
+
+.pl-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
